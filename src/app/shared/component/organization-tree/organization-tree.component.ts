@@ -10,7 +10,6 @@ import {
 import * as d3 from 'd3';
 import { OrgChart } from 'd3-org-chart';
 import { EntityCardComponent } from '../entity-card/entity-card.component';
-import { HierarchyNode } from 'd3';
 import { FormGroup } from '@angular/forms';
 
 interface OrgNode {
