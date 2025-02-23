@@ -1,0 +1,36 @@
+<div class="card-container">
+  <div class="card-avatar">
+    <img
+      [src]="'../../../assets/images/' + entity.imagePath"
+      alt="Profile image"
+    />
+  </div>
+  <div class="card-id">#{{ entity.id }}</div>
+  <div class="card-content">
+    <div class="card-top">
+      <ng-container [ngSwitch]="entity.detailType">
+        <!-- detailType 1: Company -->
+        <ng-template [ngSwitchCase]="1">
+          <h3>{{ entity.companyName }}</h3>
+
+          <div class="card-subtitle">Noida Uttar Pradesh India</div>
+        </ng-template>
+        <!-- detailType 2: Employee (CEO) -->
+        <ng-template [ngSwitchCase]="2">
+          <h3>{{ entity.employeeName }}</h3>
+          <div class="card-subtitle">CEO</div>
+        </ng-template>
+        <!-- detailType 3: Employee (Director) -->
+        <ng-template [ngSwitchCase]="3">
+          <h3>{{ entity.employeeName }}</h3>
+          <div class="card-subtitle">Director</div>
+        </ng-template>
+        <!-- Default (optional) -->
+        <ng-template ngSwitchDefault>
+          <h3>Default Name</h3>
+          <div class="card-subtitle">Default Subtitle</div>
+        </ng-template>
+      </ng-container>
+    </div>
+  </div>
+</div>
