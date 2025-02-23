@@ -13,15 +13,14 @@ import { OrganizationTreeComponent } from './shared/component/organization-tree/
 @NgModule({
   declarations: [
     AppComponent,
-    EntityCardComponent,
+
     TaskOneComponent,
     TaskSecondComponent,
-    OrganizationTreeComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     SharedModule
   ],
   providers: [],
