@@ -41,7 +41,7 @@
 
   <!-- Data Row -->
   <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand" class="example-element-row"
-    (click)="toggleRow(element)"></tr>
+    (click)="toggleRow(element)"  [ngClass]="{'parent-row': isHeaderVisible}"></tr>
 
   <!-- Expanded Detail Row -->
   <tr mat-row *matRowDef="let element; columns: ['expandedDetail']" class="example-detail-row"></tr>

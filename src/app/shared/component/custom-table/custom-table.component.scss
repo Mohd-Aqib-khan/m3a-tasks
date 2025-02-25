@@ -53,3 +53,10 @@ tr.example-element-row:not(.example-expanded-row):active {
 .example-element-description-attribution {
   opacity: 0.5;
 }
+
+
+.parent-row {
+  background-color: #3f51b5 !important;
+  /* Light gray background */
+  font-weight: bold;
+}

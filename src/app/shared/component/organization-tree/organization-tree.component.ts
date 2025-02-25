@@ -33,7 +33,7 @@ export class OrganizationTreeComponent implements AfterViewInit {
 
   data: OrgNode[] = [
     { id: 1, companyName: 'M3a Family Office', detailType: 1, imagePath: "2496508.jpg" },
-    { id: 2, customParentId: 1, detailType: 2, employeeName: 'Reetika', imagePath: "reetika.gif" },
+    { id: 2, customParentId: 1, detailType: 2, employeeName: 'Sheeba', imagePath: "reetika.gif" },
     { id: 3, customParentId: 1, detailType: 2, employeeName: 'Mohd Aqib', imagePath: "aqib.gif" },
     { id: 4, customParentId: 2, detailType: 3, employeeName: 'Prachi', imagePath: "woman.gif" },
     { id: 5, customParentId: 2, detailType: 3, employeeName: 'Rena', imagePath: "rena.gif" },
